@@ -14,3 +14,5 @@ O objetivo é validar a funcionalidade básica e o comportamento do sistema.
 ## 🚀 Como Usar
 1. Clone este repositório:
 
+- git clone https://github.com/seu-usuario/nome-repositorio.git
+- Abra no Delphi (ou IDE usada). Compile e execute.
