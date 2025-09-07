@@ -1,7 +1,7 @@
 object FormConfig: TFormConfig
   Left = 0
   Top = 0
-  Caption = 'Configurar acesso ao banco dados'
+  Caption = 'Configurar acesso ao banco de dados'
   ClientHeight = 302
   ClientWidth = 556
   Color = 14935011
