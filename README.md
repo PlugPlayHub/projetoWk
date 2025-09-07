@@ -1,4 +1,4 @@
-# projetoWk
+# ProjetoWk
 Cadastro de Pedidos Simples (Delphi 11 Alexandria + FireDAC + MySQL)
 
 ## 📌 Sobre o Projeto
