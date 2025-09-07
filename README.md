@@ -1,5 +1,5 @@
 # projetoWk
-Cadastro de Pedidos Simples (Delphi + FireDAC + MySQL)
+Cadastro de Pedidos Simples (Delphi 11 Alexandria + FireDAC + MySQL)
 
 ## 📌 Sobre o Projeto
 Este projeto foi desenvolvido para **testes de cadastro de pedidos** em Delphi, utilizando FireDAC para conexão com banco MySQL.  
