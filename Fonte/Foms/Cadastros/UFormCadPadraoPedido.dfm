@@ -847,6 +847,7 @@ inherited FormCadPadraoPedido: TFormCadPadraoPedido
   end
   object FD_Grid_produto: TFDMemTable
     AfterPost = FD_Grid_produtoAfterPost
+    AfterDelete = FD_Grid_produtoAfterDelete
     FetchOptions.AssignedValues = [evMode]
     FetchOptions.Mode = fmAll
     ResourceOptions.AssignedValues = [rvSilentMode]
