@@ -85,6 +85,7 @@ type
       Shift: TShiftState);
     procedure dbgridprodutosDblClick(Sender: TObject);
     procedure SpbDeleteprodutoClick(Sender: TObject);
+    procedure FD_Grid_produtoAfterPost(DataSet: TDataSet);
 
   private
     { Private declarations }
@@ -265,6 +266,12 @@ begin
     BuscarCliente( Editcodigocliente.text );
     Key := 0;
   end;
+end;
+
+procedure TFormCadPadraoPedido.FD_Grid_produtoAfterPost(DataSet: TDataSet);
+begin
+  inherited;
+  CalcValores;
 end;
 
 procedure TFormCadPadraoPedido.FormCreate(Sender: TObject);
@@ -461,7 +468,7 @@ begin
     t.showmodal;
   finally
     FreeAndNil( t );
-    CalcValores;
+
   end;
 
 
