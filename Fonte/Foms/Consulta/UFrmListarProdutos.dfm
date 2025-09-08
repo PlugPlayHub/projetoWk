@@ -3,15 +3,9 @@ inherited FrmListarProdutos: TFrmListarProdutos
   TextHeight = 17
   inherited PGCtrlModelo: TPageControl
     ActivePage = TabSheetManu
-    ExplicitWidth = 1333
-    ExplicitHeight = 623
     inherited TabSheetConsultar: TTabSheet
       inherited PanelPrincipal: TPanel
-        ExplicitWidth = 1325
-        ExplicitHeight = 594
         inherited PanelGrid: TPanel
-          ExplicitWidth = 1325
-          ExplicitHeight = 520
           inherited dbgridConsulta: TDBGrid
             OnDblClick = dbgridConsultaDblClick
             OnKeyDown = dbgridConsultaKeyDown
@@ -37,9 +31,7 @@ inherited FrmListarProdutos: TFrmListarProdutos
           end
         end
         inherited PanelBotoes: TPanel
-          ExplicitWidth = 1325
           inherited Panelfiltros: TPanel
-            ExplicitWidth = 1325
             inherited SB: TSearchBox
               OnInvokeSearch = SBInvokeSearch
             end
@@ -53,22 +45,7 @@ inherited FrmListarProdutos: TFrmListarProdutos
       end
     end
     inherited TabSheetManu: TTabSheet
-      inherited Panel5: TPanel
-        ExplicitLeft = 1310
-        ExplicitHeight = 519
-      end
-      inherited PanelLeftModel: TPanel
-        ExplicitHeight = 519
-      end
-      inherited Panel7: TPanel
-        ExplicitTop = 579
-        ExplicitWidth = 1325
-      end
       inherited PanelTop: TPanel
-        ExplicitWidth = 1325
-        inherited Panel1: TPanel
-          ExplicitWidth = 1325
-        end
         inherited ButtonSalvar: TPanel
           inherited SpeedButton3: TSpeedButton
             OnClick = SpeedButton3Click
@@ -83,19 +60,12 @@ inherited FrmListarProdutos: TFrmListarProdutos
     end
     inherited TabSheetdelete: TTabSheet
       inherited PanelTopExcluir: TPanel
-        ExplicitWidth = 1325
         inherited ButtonConfirmarExclusao: TPanel
           inherited SpeedButton6: TSpeedButton
             OnClick = SpeedButton6Click
           end
         end
       end
-    end
-  end
-  inherited ID_Comercial_PlugPlay: TPanel
-    ExplicitWidth = 1333
-    inherited Panel22: TPanel
-      ExplicitLeft = 1315
     end
   end
   inherited Ds: TDataSource

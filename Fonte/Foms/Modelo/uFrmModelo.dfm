@@ -32,8 +32,6 @@ object FrmModelo: TFrmModelo
     Font.Style = []
     ParentFont = False
     TabOrder = 0
-    ExplicitWidth = 1457
-    ExplicitHeight = 618
     object TabSheetConsultar: TTabSheet
       Caption = 'TabSheetConsultar'
       Font.Charset = DEFAULT_CHARSET
@@ -58,8 +56,6 @@ object FrmModelo: TFrmModelo
         ParentBackground = False
         ParentFont = False
         TabOrder = 0
-        ExplicitWidth = 1449
-        ExplicitHeight = 589
         object PanelGrid: TPanel
           Left = 0
           Top = 74
@@ -77,8 +73,6 @@ object FrmModelo: TFrmModelo
           ParentFont = False
           TabOrder = 0
           TabStop = True
-          ExplicitWidth = 1449
-          ExplicitHeight = 515
           object dbgridConsulta: TDBGrid
             Left = 0
             Top = 0
@@ -119,7 +113,6 @@ object FrmModelo: TFrmModelo
           BevelOuter = bvNone
           ParentColor = True
           TabOrder = 1
-          ExplicitWidth = 1449
           object Panelfiltros: TPanel
             Left = 0
             Top = 0
@@ -137,7 +130,6 @@ object FrmModelo: TFrmModelo
             ParentFont = False
             TabOrder = 0
             StyleElements = [seFont, seBorder]
-            ExplicitWidth = 1449
             object SPBLimparFiltro: TSpeedButton
               Left = 281
               Top = 17
@@ -351,8 +343,6 @@ object FrmModelo: TFrmModelo
         ParentBackground = False
         TabOrder = 0
         StyleElements = [seFont, seBorder]
-        ExplicitLeft = 1434
-        ExplicitHeight = 514
       end
       object PanelLeftModel: TPanel
         Left = 0
@@ -365,7 +355,6 @@ object FrmModelo: TFrmModelo
         ParentBackground = False
         TabOrder = 1
         StyleElements = [seFont, seBorder]
-        ExplicitHeight = 514
       end
       object Panel7: TPanel
         Left = 0
@@ -378,8 +367,6 @@ object FrmModelo: TFrmModelo
         ParentBackground = False
         TabOrder = 2
         StyleElements = [seFont, seBorder]
-        ExplicitTop = 574
-        ExplicitWidth = 1449
       end
       object PanelTop: TPanel
         Left = 0
@@ -392,7 +379,6 @@ object FrmModelo: TFrmModelo
         ParentBackground = False
         TabOrder = 3
         StyleElements = [seFont, seBorder]
-        ExplicitWidth = 1449
         object Panel1: TPanel
           Left = 0
           Top = 0
@@ -401,7 +387,6 @@ object FrmModelo: TFrmModelo
           Align = alTop
           BevelOuter = bvNone
           TabOrder = 0
-          ExplicitWidth = 1449
         end
         object ButtonSalvar: TPanel
           Left = 110
@@ -562,7 +547,6 @@ object FrmModelo: TFrmModelo
         Color = 16382457
         ParentBackground = False
         TabOrder = 0
-        ExplicitWidth = 1449
         object BtnVoltarExcluir: TPanel
           Left = 18
           Top = 16
@@ -720,7 +704,6 @@ object FrmModelo: TFrmModelo
     ParentBackground = False
     TabOrder = 1
     StyleElements = [seFont, seBorder]
-    ExplicitWidth = 1457
     object LabelCad: TLabel
       Left = 14
       Top = 7
@@ -745,7 +728,6 @@ object FrmModelo: TFrmModelo
       ParentColor = True
       TabOrder = 0
       StyleElements = [seFont, seBorder]
-      ExplicitLeft = 1439
     end
   end
   object Ds: TDataSource

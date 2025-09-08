@@ -12,7 +12,7 @@ uses
   FireDAC.Comp.DataSet, FireDAC.Comp.Client, FireDAC.UI.Intf, FireDAC.Stan.Def,
   FireDAC.Phys,
 
-  DataModule.Global, DataSet.Serialize, // função
+  DataSet.Serialize, // função
 
   UFormCadPadraoCliente  ; // forms
 

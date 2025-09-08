@@ -21,8 +21,6 @@ type
     FdPesquisarcodigo: TStringField;
     FdPesquisardescricao: TStringField;
     FdPesquisarpreco_venda: TFloatField;
-    procedure FormCreate(Sender: TObject);
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure SBInvokeSearch(Sender: TObject);
     procedure SpbInlcuirClick(Sender: TObject);
     procedure SpbvoltarClick(Sender: TObject);
@@ -34,7 +32,6 @@ type
     procedure SpeedButton6Click(Sender: TObject);
   private
     { Private declarations }
-    Dmbase : TDmbase;
     tFormCad:TFormCadPadraoProduto;
     procedure ExecConsulta;
 
@@ -123,19 +120,6 @@ begin
       PreperListaFieldsFiltro;
       dbgridConsulta.Visible:=true;
    end;
-end;
-
-procedure TFrmListarProdutos.FormClose(Sender: TObject;
-  var Action: TCloseAction);
-begin
-  inherited;
-  Dmbase.Free;
-end;
-
-procedure TFrmListarProdutos.FormCreate(Sender: TObject);
-begin
-  inherited;
-  Dmbase := TDmbase.Create(nil);
 end;
 
 procedure TFrmListarProdutos.pesquisar;

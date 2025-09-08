@@ -6,20 +6,17 @@ inherited FrmListarPedidos: TFrmListarPedidos
     inherited TabSheetManu: TTabSheet
       inherited Panel5: TPanel
         Top = 0
-        Height = 574
+        Height = 579
         Visible = False
         ExplicitTop = 0
-        ExplicitHeight = 574
+        ExplicitHeight = 579
       end
       inherited PanelLeftModel: TPanel
         Top = 0
-        Height = 574
+        Height = 579
         Visible = False
         ExplicitTop = 0
-        ExplicitHeight = 574
-      end
-      inherited Panel7: TPanel
-        ExplicitTop = 574
+        ExplicitHeight = 579
       end
       inherited PanelTop: TPanel
         Left = 1448

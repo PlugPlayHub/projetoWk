@@ -11,7 +11,8 @@ uses
   Winapi.CommCtrl, System.ImageList, Vcl.CheckLst,
   Vcl.WinXCtrls, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error,
   FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Phys,
-  FireDAC.Comp.Client;
+  FireDAC.Comp.Client,
+  DataModule.Global;
 
 type
   TFrmModelo = class(TForm)
@@ -66,6 +67,7 @@ type
      ListaColunas: TStringList;
 
   protected
+      Dmbase : TDmbase;
       procedure PreperListaFieldsFiltro;
 
       // arredondar cantos
@@ -120,6 +122,7 @@ end;
 procedure TFrmModelo.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   FreeAndNil(ListaColunas);
+  Dmbase.Free;
 end;
 
 procedure TFrmModelo.FormCreate(Sender: TObject);
@@ -130,6 +133,7 @@ begin
   TabSheetdelete.TabVisible:=false;
   PGCtrlModelo.ActivePage:=TabSheetConsultar;
   ListaColunas:=TStringList.Create;
+  Dmbase := TDmbase.Create(nil);
 end;
 
 
