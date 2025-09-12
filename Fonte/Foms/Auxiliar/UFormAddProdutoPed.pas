@@ -10,7 +10,8 @@ uses
   FireDAC.Comp.DataSet, FireDAC.Comp.Client, Vcl.Grids, Vcl.DBGrids,
   System.ImageList, Vcl.ImgList, Vcl.Buttons, Vcl.ExtCtrls,
 
-  DataSet.Serialize,  DataModule.Global, Vcl.Mask, Vcl.DBCtrls;
+  DataModule.Global,
+  DataSet.Serialize,  Vcl.Mask, Vcl.DBCtrls;
 
 type
   TFormAddProdutoPed = class(TForm)
@@ -38,15 +39,15 @@ type
     procedure dbgridprodutosKeyDown(Sender: TObject; var Key: Word;
       Shift: TShiftState);
     procedure dbgridprodutosKeyPress(Sender: TObject; var Key: Char);
-    procedure FormDestroy(Sender: TObject);
     procedure BtnAddClick(Sender: TObject);
     procedure Edit1KeyPress(Sender: TObject; var Key: Char);
     procedure DBEdit_qtdeKeyPress(Sender: TObject; var Key: Char);
     procedure DBEdit_valor_unitKeyPress(Sender: TObject; var Key: Char);
     procedure BtCancelarItemClick(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
   private
     { Private declarations }
-    Dmbase : TDmbase;
+    Dmbase :  TDmbase;
 
     procedure BuscarProdutoDigitado;
     procedure Edicao_ativa ( ativo : Boolean);
@@ -63,6 +64,8 @@ var
 implementation
 
 {$R *.dfm}
+
+
 
 procedure TFormAddProdutoPed.Edicao_ativa( ativo : Boolean );
 begin
@@ -256,9 +259,8 @@ var
   Name_Fonte:string;
   Cor_Padrao_Label, Cor_Padrao_Fundo : TColor;
 begin
-
+    Dmbase :=  TDmbase.Create(nil);
     FDProdutosAdd.CreateDataSet;
-    Dmbase := TDmbase.create(nil);
 
     Cor_Padrao_Label   := clBlack;
     Cor_Padrao_Fundo  :=  clwhite;

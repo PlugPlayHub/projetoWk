@@ -25,6 +25,7 @@ type
     FdPesquisarcidade: TStringField;
     FdPesquisarvalor_entregar: TFloatField;
     FdPesquisarqtde_entregar: TIntegerField;
+    FdPesquisarlista_pedidos: TStringField;
     procedure SpbInlcuirClick(Sender: TObject);
     procedure SpbvoltarClick(Sender: TObject);
     procedure SBInvokeSearch(Sender: TObject);
@@ -108,8 +109,9 @@ var
  msgErro:string;
 begin
    sql:=' select cl.cliente , cl.nome,  CONCAT( cl.cidade, " - ", uf ) as Logradouro,'+
-        '  ( select coalesce( pv.valor_total, 0) from pedido_venda pv where pv.cliente=cl.cliente)   as valor_entregar,  '+
-        ' sum( coalesce( ppv.qtde, 0)) as qtde_entregar ' +
+        '  ( select sum(coalesce( pv.valor_total, 0)) from pedido_venda pv where pv.cliente=cl.cliente)   as valor_entregar,  '+
+        '  group_concat(distinct pv.pedidov order by pv.pedidov separator ", ") as lista_pedidos, '+
+        '  sum( coalesce( ppv.qtde, 0)) as qtde_entregar ' +
         '  from clientes cl'+
         '   left join pedido_venda pv on pv.cliente=cl.cliente'+
         '   left join produto_pedidov ppv on ppv.pedidov=pv.pedidov '+

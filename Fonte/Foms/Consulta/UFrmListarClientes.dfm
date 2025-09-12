@@ -8,7 +8,6 @@ inherited FrmListarClientes: TFrmListarClientes
   inherited PGCtrlModelo: TPageControl
     Width = 1257
     Height = 627
-    ActivePage = TabSheetManu
     ExplicitWidth = 1257
     ExplicitHeight = 627
     inherited TabSheetConsultar: TTabSheet
@@ -59,6 +58,15 @@ inherited FrmListarClientes: TFrmListarClientes
                 FieldName = 'valor_entregar'
                 Title.Caption = 'Valor pedido aberto'
                 Width = 151
+                Visible = True
+              end
+              item
+                Alignment = taCenter
+                Expanded = False
+                FieldName = 'lista_pedidos'
+                Title.Alignment = taCenter
+                Title.Caption = 'Pedidos'
+                Width = 150
                 Visible = True
               end>
           end
@@ -177,6 +185,10 @@ inherited FrmListarClientes: TFrmListarClientes
     end
     object FdPesquisarqtde_entregar: TIntegerField
       FieldName = 'qtde_entregar'
+    end
+    object FdPesquisarlista_pedidos: TStringField
+      FieldName = 'lista_pedidos'
+      Size = 30
     end
   end
 end

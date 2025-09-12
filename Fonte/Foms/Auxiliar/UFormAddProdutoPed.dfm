@@ -2,8 +2,8 @@ object FormAddProdutoPed: TFormAddProdutoPed
   Left = 0
   Top = 0
   Caption = 'Adcionar item  ao pedido'
-  ClientHeight = 341
-  ClientWidth = 662
+  ClientHeight = 332
+  ClientWidth = 656
   Color = 14935011
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
